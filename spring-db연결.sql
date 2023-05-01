@@ -16,3 +16,7 @@ create table person(
 
 select * from person;
 
+select *
+from tbl_board
+limit 0, 10
+

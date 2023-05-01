@@ -39,3 +39,16 @@ update tbl_score
 set title = ${title},
 	content = ${content},
 where board_no = ${boardNo}
+
+
+-- --최신글 10개 가져와
+select *
+from tbl_board
+order by board_no desc
+-- --index, 양
+limit 0, 10 
+
+
+
+       SELECT COUNT(*)
+        FROM tbl_board
