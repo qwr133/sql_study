@@ -20,3 +20,10 @@ select *
 from tbl_board
 limit 0, 10
 
+select *
+from tbl_board
+where content like '2%'
+order by 0,6
+;
+
+

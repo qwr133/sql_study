@@ -86,4 +86,13 @@ truncate table tbl_board ;
 
 select * from tbl_board;
 select * from tbl_reply
-where board_no=3;
+where board_no=298;
+
+-- --제목에 30이 있거나, 내용에도 30 있는 것들을 보여줘
+select *
+from tbl_board
+where title like '%30%'
+or content like '%30%'
+order by board_no desc 
+limit 0,6;
+;
